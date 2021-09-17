@@ -6,7 +6,9 @@
   width: 5rem;
   height: 3.5rem;
   font-size: 0.8rem;
-  background: rgba(80, 80, 80, 0.11);
+}
+.containerbox:hover {
+  background: #cccccc;
 }
 
 .navlogo {
@@ -17,6 +19,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   background: grey;
@@ -25,7 +30,7 @@ body {
 
 .navbar {
   background: white;
-  width: 100vw;
+  width: 100%;
   height: 3.5rem;
 }
 
@@ -117,6 +122,21 @@ body {
 }
 .navright .subnavright .loginlogo {
   background-image: url("/css/images/log in.png");
+}
+
+.container {
+  background: #694a4a;
+  width: 80%;
+  height: 200vh;
+  font-size: 3rem;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  height: 15rem;
+  background: black;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
