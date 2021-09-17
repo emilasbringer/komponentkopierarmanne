@@ -1,4 +1,6 @@
-$navheight: 4rem;
+$navheight: 3.5rem;
+@import "utilities/containerbox";
+@import "utilities/navlogoutil";
 
 body {
     margin: 0;
@@ -28,15 +30,24 @@ body {
         height: $navheight;
     }
     .genres {
-        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14rem;
         height: $navheight;
     }
     .genretext {
         font-size: 1.5rem;
-        width: 100%;
-        height: $navheight;
+        width: 10rem;
+        height: 1.8rem;
         text-align: center;
-        padding-top: 0.75rem;
+    }
+    .genrelogo {
+        height: 1.5rem;
+        width: 1.5rem;
+        background-image: url("images/downarrow.png");
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
     }
 }
 
@@ -62,18 +73,39 @@ body {
         &:active {
             background: #3a7e55;
         }
+        .adlogo {
+            width: 30%;
+            padding-top: 0.4rem;
+        }
+        .adtext {
+            color: white;
+            padding-top: 0.4rem;
+        }    
     }
-    .adlogo {
-        width: 30%;
-        padding-top: 0.4rem;
-    }
-    .adtext {
-        color: white;
-        padding-top: 0.4rem;
-    }
-    .search {
-        width: $navheight;
+
+    .subnavright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly   ;
+        width: 20rem;
         height: $navheight;
-        background: red;
-    }
+        margin-left: 1rem;
+        .searchlogo {
+            background-image: url("/css/images/searchlogo.png");
+        }
+        .messagelogo {
+            background-image: url("/css/images/messages.png");
+        }
+        .savedlogo {
+            background-image: url("/css/images/saved.png");
+        }
+        .loginlogo {
+            background-image: url("/css/images/log\ in.png");
+        }
+        
+    } 
+
+
 }
+

@@ -1,0 +1,10 @@
+.containerbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: $navheight;
+    font-size: 0.8rem;
+    background: rgba(80, 80, 80, 0.11);
+}
